@@ -12,7 +12,7 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     strip.setBrightness(50)
     for (let index = 0; index <= 24; index++) {
-        strip.setPixelColor(index, neopixel.colors(NeoPixelColors.Green))
+        strip.setPixelColor(index, neopixel.rgb(0, index * 10, 0))
         strip.show()
         basic.pause(100)
     }
